@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <div >
+      <bold><h1>
+        Welcome to the 'Guessing the CSUN location' game.
+        </h1> Double click the loctation you think matches the location given. If you guessed correctly, the location, otherwise wrong guesses turn red. Try to guess all 5 correctly. <br><br>First location: Sierra Quad<br>Second location: <span class="two"></span><br>Third location: <span class="three"></span><br>Fourth location: <span class="four"></span><br>Fifth location: <span class="five"></span><br>Number Correct out of 5 : <span class="score"></span></bold>
+    </div>
+    <div id="map">
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXJ5wBP7NjErvE9gVJfI5OFmSfGyCDcLo&callback=initMap"></script>
+    </div>
+      <!--   
+  
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXJ5wBP7NjErvE9gVJfI5OFmSfGyCDcLo"
+      defer
+    ></script> -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00"
+            crossorigin="anonymous"></script>
+  </body>
+</html>

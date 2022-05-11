@@ -24,7 +24,7 @@ $(".score").text(score);
 function initMap() {
   map = new window.google.maps.Map(document.getElementById("map"), {
     center: { lat: 34.23953309518544, lng: -118.52739370002166 },
-    //mapId: '9df71ae3092839ba',
+    mapId: '9df71ae3092839ba',
     zoom: 17,
     draggable: false,
     scrollwheel: false,
